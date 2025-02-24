@@ -9,5 +9,5 @@ You can play:
 - AI opponent with smart moves
 - Responsive design for all devices
 - Smooth animations and transitions
-- 
+
 📌 Feel free to contribute and improve the game! 🚀

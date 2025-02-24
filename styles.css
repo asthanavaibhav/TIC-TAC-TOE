@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1e1e2e, #3a3a5e);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Header Styling */
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+/* Board Styling */
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 90%;
+    max-width: 320px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.cell:hover {
+    transform: scale(1.1);
+}
+
+.cell.taken {
+    cursor: not-allowed;
+}
+
+/* Winner Announcement */
+.winner {
+    color: #4caf50;
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Buttons */
+button {
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    margin: 10px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #e64a19;
+    transform: scale(1.05);
+}
+
+/* Mode Selection */
+.mode-selection {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media (min-width: 600px) {
+    .mode-selection {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+}
